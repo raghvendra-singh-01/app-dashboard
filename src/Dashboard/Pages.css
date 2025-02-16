@@ -1,0 +1,51 @@
+/* src/Dashboard/Pages.css */
+.page-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page-content {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.page-text {
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 15px;
+  }
+
+  .page-title {
+    font-size: 1.5em;
+  }
+
+  .page-content {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 1.2em;
+  }
+
+  .page-content {
+    font-size: 0.9em;
+  }
+}

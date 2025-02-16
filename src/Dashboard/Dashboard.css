@@ -1,0 +1,68 @@
+/* src/Dashboard/Dashboard.css */
+.dashboard-container {
+    padding: 24px;
+    max-width: 1200px; /* Added max-width */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    padding: 24px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .card-icon {
+    padding: 8px;
+    background-color: #ebf8ff;
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+  }
+  
+  .card-description {
+    color: #4b5563;
+    font-size: 14px;
+  }
+  
+  .card-stats {
+    font-size: 14px;
+    color: #6b7280;
+  }
