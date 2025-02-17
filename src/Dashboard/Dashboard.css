@@ -24,17 +24,18 @@
   }
   
   .card {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     border: 1px solid #e5e7eb;
     padding: 24px;
     cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
   
   .card:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
   }
   
   .card-header {
@@ -55,14 +56,31 @@
     font-weight: 600;
     color: #1f2937;
     margin-bottom: 8px;
+    text-align: center;
   }
   
   .card-description {
     color: #4b5563;
     font-size: 14px;
+    text-align: center;
   }
   
   .card-stats {
     font-size: 14px;
     color: #6b7280;
+  }
+
+  .chart-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333333;
   }

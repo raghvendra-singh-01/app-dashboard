@@ -9,6 +9,7 @@ import SuccessPage from './Success';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Dashboard/Layout';
 import Dashboard from './Dashboard/Dashboard';
+import Profile from './Dashboard/Profile';
 import {
   EmailPage,
   CalendarPage,
@@ -16,6 +17,7 @@ import {
   AnalyticsPage,
   TeamPage,
   SettingsPage,
+  ProfilePage, // Import ProfilePage
 } from './Dashboard/Pages';
 
 function App() {
@@ -30,6 +32,14 @@ function App() {
             element={
               <Layout>
                 <Dashboard />
+              </Layout>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <Layout>
+                <Profile />
               </Layout>
             }
           />
@@ -78,6 +88,14 @@ function App() {
             element={
               <Layout>
                 <SettingsPage />
+              </Layout>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <Layout>
+                <ProfilePage />
               </Layout>
             }
           />

@@ -8,9 +8,17 @@
 
 .sidebar {
   width: 256px;
-  background-color: white;
+  background-color: #ffffff;
   border-right: 1px solid #e5e7eb;
   padding: 24px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 80px;
 }
 
 .sidebar-link {
@@ -42,15 +50,33 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
+  margin-left: 256px;
+  padding: 24px;
+  background-color: #f9fafb;
+  transition: margin-left 0.3s;
+}
+
+.main-content.collapsed {
+  margin-left: 80px;
 }
 
 .header {
-  background-color: white;
+  background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 303px;
+  right: 0;
+  z-index: 1000;
+  transition: left 0.3s;
+}
+
+.header.collapsed {
+  left: 80px;
 }
 
 .header-title {
@@ -112,4 +138,24 @@
 .content-wrapper {
   flex: 1;
   padding: 24px;
+  margin-top: 64px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 24px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 256px;
+  right: 0;
+  transition: left 0.3s;
+}
+
+.footer.collapsed {
+  left: 80px;
 }

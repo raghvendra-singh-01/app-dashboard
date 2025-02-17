@@ -10,7 +10,7 @@ const SuccessPage = () => {
                 <img src="/favicon.ico" alt="Success Icon" className="w-16 h-16 mb-4" />
                 <p className="text-green-700 font-semibold text-lg">Success! You are logged in.</p>
                 <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded" onClick={() => navigate("/dashboard")}>
-                    Go to Home
+                    Go to Dashboard
                 </button>
             </div>
         </div>

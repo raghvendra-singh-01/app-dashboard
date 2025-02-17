@@ -43,7 +43,7 @@ export function DocumentsPage() {
 
 export function AnalyticsPage() {
   return (
-    <div className="page-container">
+    <div class="page-container">
       <h1 className="page-title">Analytics</h1>
       <div className="page-content">
         <p className="page-text">
@@ -74,6 +74,19 @@ export function SettingsPage() {
       <div className="page-content">
         <p className="page-text">
           Application settings will be displayed here.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export function ProfilePage() {
+  return (
+    <div className="page-container">
+      <h1 className="page-title">Profile</h1>
+      <div className="page-content">
+        <p className="page-text">
+          Your profile information will be displayed here.
         </p>
       </div>
     </div>
